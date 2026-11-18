@@ -1,0 +1,1319 @@
+
+/* font
+----------------------------------*/
+
+/*!
+ * "nsjp-demilight" licensed under the SIL Open Font License 1.1
+ * https://www.google.com/get/noto/#sans-jpan
+ */
+
+/* ja */
+@font-face {
+  font-family: 'nsjp-demilight-ja';
+  src: url("../fonts/nsjp-demilight.woff") format("woff");
+  font-display: swap;
+}
+
+/* en */
+@font-face {
+  font-family: 'nsjp-demilight-en';
+  src: url("../fonts/nsjp-demilight.woff") format("woff");
+  font-display: swap;
+}
+
+/*!
+ * "nssc-light" licensed under the SIL Open Font License 1.1
+ * https://www.google.com/get/noto/#sans-hans
+ */
+
+/* zh */
+@font-face {
+  font-family: 'nssc-light-zh';
+  src: url("../fonts/nssc-light.woff") format("woff");
+  font-display: swap;
+}
+
+/*!
+ * Copyright (C) 2020 WingArc 1st Inc.
+ *      https://fonts.google.com/specimen/Kosugi
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@font-face {
+  font-family: 'nsjp-demilight-ja';
+  src: url("../fonts/005C.woff") format("woff");
+  unicode-range: U+005C;
+  font-display: swap;
+}
+
+
+/* text style
+----------------------------------*/
+
+/* UI */ /* ja, zh */
+span.guilabel:lang(ja), span.guilabel:lang(zh) {
+  font-weight: inherit;
+}
+
+/* キー表記 */
+.keycap-graphical {
+    padding: 0em 0.5em;
+}
+
+/* ファイルパス */
+code {
+    padding: 2px 4px;
+    color: #c7254e;
+    background-color: #F0F0F0;
+    border-radius: 4px;
+}
+
+/* link
+----------------------------------*/
+
+a.xref, a.link {
+  text-decoration:underline;
+  color: #3aa3e3;
+  word-break: break-all;
+}
+
+a.xref:hover, a.link:hover {
+  text-decoration: none;
+}
+
+/*-- broken link --*/
+a[href^="/document/preview/"] {
+  pointer-events: none;
+  text-decoration: none;
+  color: #797979;
+}
+
+/*-- link icon --*/
+.header-link {
+  display: none;
+}
+
+.title:hover .header-link {
+  display: inline-block;
+}
+
+
+/* font color
+----------------------------------*/
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+
+/* dropdown
+----------------------------------*/
+
+.dropdown-menu>li>a, .version-dropdown {
+  cursor: pointer;
+}
+
+
+/* Publication
+----------------------------------*/
+
+.orgname, .abstract-title {
+  display: none;
+}
+
+
+/* portal
+----------------------------------*/
+
+/*-- font(en) --*/
+*[data-portal-language="en"] .h1, *[data-portal-language="en"] .h2, *[data-portal-language="en"] .h3, 
+*[data-portal-language="en"] .h4, *[data-portal-language="en"] .h5, *[data-portal-language="en"] .h6, 
+*[data-portal-language="en"] h1, *[data-portal-language="en"] h2, *[data-portal-language="en"] h3, 
+*[data-portal-language="en"] h4, *[data-portal-language="en"] h5, *[data-portal-language="en"] h6 {
+  font-family: 'nsjp-demilight-en', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+}
+
+/*-- font(zh) --*/
+*[data-portal-language="zh"] .h1, *[data-portal-language="zh"] .h2, *[data-portal-language="zh"] .h3, 
+*[data-portal-language="zh"] .h4, *[data-portal-language="zh"] .h5, *[data-portal-language="zh"] .h6, 
+*[data-portal-language="zh"] h1, *[data-portal-language="zh"] h2, *[data-portal-language="zh"] h3, 
+*[data-portal-language="zh"] h4, *[data-portal-language="zh"] h5, *[data-portal-language="zh"] h6 {
+  font-family: 'nssc-light-zh', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+}
+
+/*-- font(ja) --*/
+*[data-portal-language="ja"] .h1, *[data-portal-language="ja"] .h2, *[data-portal-language="ja"] .h3, 
+*[data-portal-language="ja"] .h4, *[data-portal-language="ja"] .h5, *[data-portal-language="ja"] .h6, 
+*[data-portal-language="ja"] h1, *[data-portal-language="ja"] h2, *[data-portal-language="ja"] h3, 
+*[data-portal-language="ja"] h4, *[data-portal-language="ja"] h5, *[data-portal-language="ja"] h6 {
+  font-family: 'nsjp-demilight-ja', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+}
+
+/*-- h1 --*/
+.portal-header h1 {
+  color: #ffffff;
+}
+
+/*-- version drop down menu (for mobile) --*/
+@media (max-width: 767px){
+  
+  /* navbar */
+  .portal-header .navbar-toggle .icon-bar {
+    background-color:#ffffff;
+  }
+  
+  .portal-header .navbar-toggle {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  
+  /* drop down */
+  .navbar-right {
+    background-color: #ffffff;
+    font-size: 14px;
+    width: 200px;
+    padding: 0;
+    position: absolute;
+    margin-top: -20px;
+    right: 15px;
+  }
+  
+  .portal-header #navbar .version-menu .version-dropdown a  {
+    color: #797979;
+  }
+  
+  .portal-header #navbar .version-menu li a {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .portal-header .caret {
+    margin-right: 5px;
+    margin-left: 8px;
+  }
+
+  .portal-header #navbar .version-menu .version-dropdown ul li:hover {
+    background-color: #eeeeee;
+  }
+  
+  .portal-header #navbar .version-menu .version-dropdown ul li {
+    padding-left: 21px;
+  }
+}
+
+/*-- search box --*/
+.portal-header .search-field {
+  background-color: rgba(255, 255, 255, 0.9)
+}
+
+@media (max-width: 991px){
+  .portal-header .portal-search .search-field {
+    width: 60vw;
+  }
+}
+
+/*-- search box (algolia) --*/
+.portal-header .algoliasearch .search-field {
+   border-radius: 4px;
+}
+
+[data-portal-language="en"] .algoliasearch,
+[data-portal-language="zh"] .algoliasearch {
+  display: none;
+}
+
+/* tooltip (algolia) */
+.tooltip-inner  {
+  max-width: 95%;
+  text-align: left;
+  margin: auto;
+}
+
+/* search icon (algolia) */
+.portal-header .algoliasearch input:-ms-input-placeholder { /* IE */
+  font-family: FontAwesome;
+  color: #999999!important;
+}
+
+.portal-header .algoliasearch input::placeholder {
+  font-family: FontAwesome;
+  color: #999999!important;
+}
+
+/*-- search button (algolia) --*/
+.portal-header .algoliasearch button.btn {
+  display: none;
+}
+
+/*-- search result (algolia) --*/
+/* line clamp */ /* IE */
+@media screen and (-ms-high-contrast:none) { 
+  .aa-search-body {
+    max-height: calc(1.8em * 5);
+  }
+}
+
+/* line clamp */ /* others */
+.aa-search-body {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  word-break: break-all;
+}
+
+/* highlight */
+.aa-search-title {
+  font-weight: normal;
+}
+
+.aa-suggestion .aa-search-title em {
+  color: #1976d2;
+}
+
+.aa-suggestion .aa-search-title em, 
+.aa-suggestion .aa-search-body em {
+  font-weight: bold;
+}
+
+/*-- search page link (algolia) --*/
+.search-page-link a {
+  margin-right: 0;
+}
+
+/*-- feature content --*/
+.featured-content-label {
+  visibility: hidden;
+}
+
+.publication-contents h4 span {
+    display: none;
+}
+
+@media (min-width: 768px){
+  .portal-contents .inner {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+/*-- algolia simple search --*/
+/* result drop down */
+.portal-content .aa-dropdown-menu {
+  width: 70vw;
+  margin: 0 calc(50% - 35vw);
+}
+
+/* mobile */
+@media (max-width: 767px){
+  
+  .portal-header .portal-search .search-field {
+    width: 85vw;
+  }
+
+  .portal-content .aa-dropdown-menu {
+    width: 90vw;
+    margin: 0 calc(50% - 45vw);
+  }
+  
+}
+
+
+/* algolia search page (search.html)
+----------------------------------*/
+
+/*-- logo link --*/
+.portal-header .logo-link {
+  display: table;
+}
+
+/*-- search box --*/
+/*! search icon */
+.portal-header .ais-SearchBox-form input:-ms-input-placeholder {
+  font-family: FontAwesome;
+  color: #999999!important;
+}
+
+.portal-header .ais-SearchBox-form input::placeholder {
+  font-family: FontAwesome;
+  color: #999999!important;
+}
+
+/*-- search box --*/
+.portal-header .ais-SearchBox-form .search-field {
+   border-radius: 4px;
+}
+
+/*-- search button --*/
+.portal-header .ais-SearchBox-submit.btn {
+  display: none;
+}
+
+/*-- faset --*/
+/* product */
+.ais-RefinementList-Label {
+    margin-bottom: 8px;
+}
+
+/* manual */
+.ais-HierarchicalMenu-link {
+  margin-bottom: 8px;
+}
+
+/*-- search result --*/
+/* HitsPerPage */
+div.ais-HitsPerPage {
+  margin-bottom: 17px;
+  display: inline-block;
+}
+
+div#hits-per-page.ais-HitsPerPage:before {
+  content: "表示件数：";
+}
+
+select::-ms-expand {
+  display: none; /* IE */
+}
+
+/* line clamp */ /* IE */
+@media screen and (-ms-high-contrast:none) { 
+  .hit-body {
+    max-height: calc(1.8em * 5);
+  }
+}
+
+/* line clamp */ /* others */
+.hit-body {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  word-break: break-all;
+}
+
+/* highlight */
+a h4.hit-title mark {
+  color: #1976d2;
+}
+
+.mark, mark {
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0em;
+}
+
+/* breadcrumbs */
+.hit-breadcrumbs {
+    color: #78a3cc;
+}
+
+/* offline search
+----------------------------------*/
+
+.searchresultsnippet {
+  color: #777;
+  font-size: 14px;
+}
+
+.search-result-breadcrumbs {
+  color: #78a3cc;
+  font-size: 14px;
+}
+
+.searchresultitem .searchresulttitle {
+  color: #1976d2;
+}
+
+h3.searchresulttitle {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+li.searchresultitem {
+  padding: 0 1.6rem 0;
+}
+
+/* body
+----------------------------------*/
+
+/*-- font(en) --*/
+body:lang(en), *[data-portal-language="en"], .popover-content:lang(en) {
+  font-family: 'nsjp-demilight-en', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+}
+
+/*-- font(zh) --*/
+body:lang(zh), *[data-portal-language="zh"], .popover-content:lang(zh) {
+  font-family: 'nssc-light-zh', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+}
+
+/*-- font(ja) --*/
+body:lang(ja), *[data-portal-language="ja"], .popover-content:lang(ja) {
+  font-family: 'nsjp-demilight-ja', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6em;
+  color: #797979;
+}
+
+
+/* heading
+----------------------------------*/
+
+/*-- font(en) --*/
+.h1:lang(en), .h2:lang(en), .h3:lang(en), .h4:lang(en), .h5:lang(en), .h6:lang(en), 
+h1:lang(en), h2:lang(en), h3:lang(en), h4:lang(en), h5:lang(en), h6:lang(en) {
+  font-family: 'nsjp-demilight-en', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+/*-- font(zh) --*/
+.h1:lang(zh), .h2:lang(zh), .h3:lang(zh), .h4:lang(zh), .h5:lang(zh), .h6:lang(zh), 
+h1:lang(zh), h2:lang(zh), h3:lang(zh), h4:lang(zh), h5:lang(zh), h6:lang(zh) {
+  font-family: 'nssc-light-zh', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+/*-- font(ja) --*/
+.h1:lang(ja), .h2:lang(ja), .h3:lang(ja), .h4:lang(ja), .h5:lang(ja), .h6:lang(ja), 
+h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja), h5:lang(ja), h6:lang(ja) {
+  font-family: 'nsjp-demilight-ja', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+/*-- 行頭 --*/
+#topic-content > section > .titlepage .title{
+  margin: 0 0 0.5em;
+}
+
+.title.h1, .title.h2, .title h1, .title h2 {
+  padding-left: 0.5em;
+  border-left: 8px solid #666666;
+  margin: 1.5em 0 0.5em 0;
+}
+
+.title.h3, .title.h4, .title.h5, .title.h6, .title h3, .title h4, .title h5, .title h6, h6 {
+  padding-left: 0.5em;
+  border-left: 4px solid #666666;
+  margin: 1.5em 0 0.5em 0;
+  text-transform: none;
+}
+
+/*-- font size --*/
+.h1, h1 {
+  font-size: 2.2em;
+}
+
+.h2, h2 {
+  font-size: 1.9em;
+}
+
+.h3, h3 {
+  font-size: 1.6em;
+}
+
+.h4, h4 {
+  font-size: 1.3em;
+}
+
+.h6, h6, .bridgehead {
+  font-size: 1em;
+}
+
+/*-- title weight --*/
+.title, .bridgehead {
+  font-weight: bold;
+}
+
+/*! bridgehead */
+.bridgehead {
+  line-height: 2em;
+}
+
+
+/* accordion
+----------------------------------*/
+
+/* panelのヘッダーアイコン（折りたたまれている場合のアイコン）*/
+/*ASN: Important to set :not(div) here, otherwise we get two of these, since the actual title is wrapped in a div.title too*/
+ .panel-heading :not(div).title:before, .panel-heading .sidebar-title:before{
+    content: "\f055";
+    font-size: 1.2em;
+ }
+
+/* panelのヘッダーが展開されている場合のアイコン */
+ .panel-heading.active :not(div).title:before, .panel-heading.active .sidebar-title:before{
+     content: "\f056";
+ }
+
+/* panelのヘッダーが展開されている場合のアイコン */
+ .panel-heading.active :not(div).title:before, .panel-heading.active .sidebar-title:before{
+     content: "\f056";
+ }
+ 
+/* 全展開、全折りたたみのアイコン */
+.fa-expand:before, .fa-compress:before {
+  font-size: 1em;
+}
+
+.fa-expand:lang(ja):before {
+  content: "\f055  すべて開く";
+  font-family: FontAwesome, 'nsjp-demilight-ja';
+}
+.fa-expand:lang(zh):before {
+  content: "\f055  全部展开";
+  font-family: FontAwesome, 'nssc-light-zh';
+}
+.fa-expand:lang(en):before {
+  content: "\f055  Expand all";
+  font-family: FontAwesome, 'nsjp-demilight-en';
+}
+
+.fa-compress:lang(ja):before {
+  content: "\f056  すべて閉じる";
+  font-family: FontAwesome, 'nsjp-demilight-ja';
+}
+.fa-compress:lang(zh):before {
+  content: "\f056  全部折叠";
+  font-family: FontAwesome, 'nssc-light-zh';
+}
+.fa-compress:lang(en):before {
+  content: "\f056  Collapse all";
+  font-family: FontAwesome, 'nsjp-demilight-en';
+}
+
+/* panel の設定 */
+ .panel{
+    border-bottom: none;
+ }
+
+/* para
+----------------------------------*/
+p, pre {
+    margin: 0 0 0.7em;
+}
+
+.informalexample.p, .informalexample.pre {
+  margin: 0 0 0.7em;
+}
+
+/* list
+----------------------------------*/
+
+main ol, main ul {
+  padding-left: 1em;
+  margin: 0 0.5em 0.5em;
+}
+
+li.listitem {
+  margin-left: 0.5em;
+}
+
+
+/* itemizedlist
+----------------------------------*/
+
+/* 行頭記号 */
+main ul ul ul, td ul, td ul ul ul, td ul td ul, .tip ul, .tip ul ul ul, .tip ul td ul, .note ul, .note ul ul ul, .note ul td ul, .warning ul, .warning ul ul ul, .warning ul td ul, .important ul, .important ul ul ul, .important ul td ul, .caution ul, .caution ul ul ul, .caution ul td ul{
+  list-style-type: disc!important;
+}
+
+main ul ul ul ul, td ul ul, td ul ul ul ul, td ul td ul ul, .tip ul ul, .tip ul ul ul ul, .tip ul td ul ul, .note ul ul, .note ul ul ul ul, .note ul td ul ul, .warning ul ul, .warning ul ul ul ul, .warning ul td ul ul, .important ul ul, .important ul ul ul ul, .important ul td ul ul, .caution ul ul, .caution ul ul ul ul, .caution ul td ul ul{
+  list-style-type: circle!important;
+}
+
+
+/* procedure
+----------------------------------*/
+
+/*-- 背景色 --*/
+.theme1 .procedure > li::before {
+    background-color: #999999;
+}
+
+
+/* accordion ol, procedure
+----------------------------------*/
+
+div.accordion .procedure > li::before {
+  display: none;
+}
+
+div.accordion ol.procedure,
+div.accordion ul.procedure {
+    list-style-type: decimal !important;
+}
+
+div.accordion ol {
+  list-style-type: decimal;
+}
+
+div.accordion ol ol {
+  list-style-type: lower-alpha;
+}
+
+div.accordion ol ol ol {
+  list-style-type: lower-roman;
+}
+
+
+/* orderedlist
+----------------------------------*/
+
+td ol, tip ol, .note ol, .caution ol {
+  list-style-type: decimal;
+}
+
+td ol ol, .tip ol ol, .note ol ol, .caution ol ol {
+  list-style-type: lower-alpha;
+}
+
+td ol ol ol, .tip ol ol ol, .note ol ol ol, .caution ol ol ol {
+  list-style-type: lower-roman;
+}
+
+
+/* glossary
+----------------------------------*/
+
+/* 用語 */
+dt>.glossterm {
+  pointer-events: none;
+  color: #797979;
+  cursor: text;
+}
+
+
+/* 図表例
+----------------------------------*/
+
+/* ラベル */
+.formal-label {
+  display: none;
+}
+
+/* タイトル */
+div.table-title, div.figure-title, div.example-title {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  padding: 5px;
+}
+
+/* mediaobject, inlinemediaobject
+----------------------------------*/
+/*-- 枠線 --*/
+.waku img {
+    outline: 1px solid;
+}
+
+/*-- margin --*/
+.mediaobject, .inlinemediaobject{
+  margin-bottom: 0.5em;
+}
+
+/*-- pop-up --*/
+#materialbox-overlay {
+  background-color: #ffffff;
+}
+
+/*-- pop-up (IE) --*/
+@media all and (-ms-high-contrast:none) {
+  .materialboxed.active {
+    position: fixed!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+/* videoobject,
+----------------------------------*/
+
+.videoobject {
+  margin-top: 0;
+}
+
+/* 最大幅 */
+.video-container {
+  max-width: 720px;
+  height: auto;
+}
+
+/* mediaobject
+----------------------------------*/
+
+/*-- 最大幅 --*/
+table>.image-viewport {
+  max-width: 100%;
+}
+
+/*-- caption --*/
+.caption {
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+.mediaobject .caption {
+  margin-top: 0px;
+  font-style: normal;
+}
+
+/* inlinemediaobject
+----------------------------------*/
+
+.inlinemediaobject {
+  vertical-align: 0.1em;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* 最大サイズ */
+.inlinemediaobject img:not([height]):not([width]) {
+  height: auto;
+  max-height: 1.2em;
+}
+
+
+/* example, informalexanple
+----------------------------------*/
+
+/* テキスト折り返し、外枠 */
+.informalexample {
+  word-wrap: break-word;
+  border: 1px solid #ccc;
+  padding: 1em 1em 0;
+  margin-bottom: 1.5em;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+.example {
+  margin-bottom: 1.5em;
+  border: none;
+  padding: 0 1em;
+}
+
+.example-title {
+  border: 1px solid #ccc;
+  border-left-width: 10px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 0.5em;
+}
+
+.example-contents {
+  border: 1px solid #ccc;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 1em 1em 0;
+  font-size: 0.9em;
+}
+
+/* example内にprogramlisting 1つのみの場合 */
+.exprog {
+  border: none;
+  margin-left: 0em;
+  margin-right: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
+
+.example .exprog {
+  margin-left: -16.5px;
+  margin-right: -16.5px;
+}
+
+/* programlisting
+----------------------------------*/
+
+/* font */
+code:lang(ja), kbd:lang(ja), pre:lang(ja), samp:lang(ja) {
+    font-family: Menlo, Monaco, Consolas, "Courier New", 'nsjp-demilight-ja', monospace;
+}
+
+code:lang(en), kbd:lang(en), pre:lang(en), samp:lang(en) {
+    font-family: Menlo, Monaco, Consolas, "Courier New", 'nsjp-demilight-en', monospace;
+}
+
+code:lang(zh), kbd:lang(zh), pre:lang(zh), samp:lang(zh) {
+    font-family: Menlo, Monaco, Consolas, "Courier New", 'nssc-light-zh', monospace;
+}
+
+/* 外枠 */
+.programlisting {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  
+}
+
+/* 背景色 */
+pre {
+  background-color: #ffffff;
+}
+
+/* テキストの折り返し */
+pre, code.code {
+  word-break: break-word;
+}
+
+/*-- font size --*/
+
+pre, code {
+  font-size: 1em;
+}
+
+/* table, informaltable
+----------------------------------*/
+
+/* タイトル背景色 */
+
+.th, .tableheader, td.tableheader {
+  background-color: #F5F5F5;
+}
+
+/* セル幅の最小幅（2バイト3文字分）*/
+.th, .td {
+  min-width: 4.2em;
+}
+
+/* セル背景色 */
+.td {
+  background-color: #ffffff;
+}
+
+/*　ヘッダー行の下の罫線　*/
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+  border-bottom-width: 1px
+}
+
+/* 入れ子コンテンツのフォントサイズ */
+.table .informaltable, .informaltable .table {
+  font-size: 98%;
+}
+
+/* モバイル表示の罫線 */
+@media screen and (max-width: 767px) {
+.table-responsive>.table-bordered {
+    border: 1px solid #ddd;
+  border-collapse: collapse;
+  }
+}
+
+/* last-child */
+.informaltable td p:last-child, .informaltable th p:last-child, .table td p:last-child, .table th p:last-child {
+    margin-bottom: 0.5em;
+}
+
+.table>thead>tr>th {
+  vertical-align: top;
+}
+
+/* 表下margin */
+.table, .informaltable {
+  margin-bottom: 0.5em;
+}
+
+
+/* table
+----------------------------------*/
+
+/* タイトル行のテキスト位置 */
+.table>tbody>tr>td, .table>tbody>tr>th {
+  vertical-align: top;
+}
+
+/* 表幅 */
+.table {
+  width: auto;
+}
+
+
+/* informaltable
+----------------------------------*/
+
+/* tableと同じに */
+.informaltable>tbody>tr>td, .informaltable>tbody>tr>th, .informaltable>tfoot>tr>td, .informaltable>tfoot>tr>th, .informaltable>thead>tr>td, .informaltable>thead>tr>th {
+  padding: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  line-height: 1.4;
+  border-top: 1px solid #ddd;
+}
+
+/* tfoot, theadのテキスト位置 */
+.informaltable>tfoot>tr>td, .informaltable>tfoot>tr>th, .informaltable>thead>tr>td, .informaltable>thead>tr>th {
+  vertical-align: middle;
+}
+
+/* tbodyのテキスト位置 */
+.informaltable>tbody>tr>td, .informaltable>tbody>tr>th {
+  vertical-align: top;
+}
+
+/* p margin*/
+.informaltable td p, .informaltable th p, .table td p, .table th p {
+  margin-bottom: 0.7em;
+}
+
+/* Admonitions
+----------------------------------*/
+
+.caution,
+.note,
+.tip {
+  background-color: #fff;
+}
+
+.notice {
+  border-left-color: #2ab27b;
+}
+
+.notice:before {
+  color: #2ab27b;
+}
+
+.note,
+.caution,
+.warning,
+.tip,
+.important {
+    padding: 0px 0px 1px 40px;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.note h3,
+.caution h3,
+.warning h3,
+.tip h3,
+.important h3 {
+  padding: 10px 0px 0px 0px;
+}
+
+.note > p,
+.caution > p,
+.warning > p,
+.tip > p,
+.important > p {
+  padding-right: 0;
+}
+
+.note > *,
+.caution > *,
+.warning > *,
+.tip > *,
+.important > * {
+  padding-right: 0;
+}
+
+/* icon */
+.note:before,
+.caution:before,
+.warning:before,
+.tip:before,
+.important:before {
+    left: 12px;
+    top: 10px;
+}
+
+
+/* br
+----------------------------------*/
+
+br {
+  display: none;
+}
+
+
+/* main
+----------------------------------*/
+
+@media (min-width: 992px){
+  .pager, .site-footer, main article {
+    margin-left: 3%;
+    float: left;
+    width: 97%;
+  }
+}
+
+/* side by side images
+----------------------------------*/
+
+.flex-container {
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.flex-item:nth-child(1) {
+  width: 45%!important;
+}
+
+.flex-item:nth-child(2) {
+  width: 55%!important;
+}
+
+.flex-item table {
+  width: 100%!important;
+  margin: 0px;
+}
+
+.flex-item .image-viewport img {
+  max-width: 100%!important;
+  margin: 0px;
+}
+
+
+/* toc
+----------------------------------*/
+
+/*-- width --*/
+@media (min-width: 1200px) {
+  
+  .site-sidebar {
+    width: 23%;
+  }
+  
+  .site-content, .fixed-toolbar .breadcrumb-container {
+    width: 77%;
+    margin-left: 23%;
+  }
+}
+
+@media (min-width: 1500px) {
+  
+  .site-sidebar {
+    width: 20%;
+  }
+  
+  .site-content, .fixed-toolbar .breadcrumb-container {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 767px){
+  .fixed-toolbar .toolbar {
+    position: relative;
+    margin-top: -64px;
+  }
+}
+
+/*-- logo --*/
+@media (max-width: 991px){
+  .theme1 .site-sidebar .logo {
+    width: 105px;
+  }
+}
+
+/*-- search --*/
+.search-field {
+  background-color: #ffffff;
+  color: #666666;
+}
+
+/*-- search icon --*/
+/* IE */
+.site-sidebar input:-ms-input-placeholder {
+  font-family: FontAwesome;
+  color: #999999!important;
+}
+
+/* others */
+.site-sidebar input::placeholder {
+  font-family: FontAwesome;
+  color: #999999!important;
+}
+
+/*-- アクティブな項目は製品別 --*/
+
+/*-- 非アクティブな項目 --*/
+.nav-site-sidebar ul a {
+ color: #ffffff;
+}
+
+/*-- 階層 --*/
+.nav-site-sidebar ul a {
+  padding-left: 2em;
+}
+.nav-site-sidebar ul ul a {
+  padding-left: 3em;
+}
+.nav-site-sidebar ul ul ul a {
+  padding-left: 4em;
+}
+.nav-site-sidebar ul ul ul ul a {
+  padding-left: 5em;
+}
+.nav-site-sidebar ul ul ul ul ul a {
+  padding-left: 6em;
+}
+.nav-site-sidebar ul ul ul ul ul ul a {
+  padding-left: 7em;
+}
+.nav-site-sidebar ul ul ul ul ul ul ul a {
+  padding-left: 8em;
+}
+
+/*-- 開閉アイコン(IE対応) --*/
+.toc .glyphicon {
+  font-family: FontAwesome;
+  font-size: 15px;
+ }
+
+.toc .glyphicon::before {
+  content: "\f105";
+}
+
+.toc .opened > .topic-link > .glyphicon::before {
+  content: "\f107";
+}
+
+/*-- algolia --*/
+.toc-search {
+  text-align: right;
+  margin: 10px;
+}
+
+.toc-search a {
+  color: #ffffff;
+}
+
+
+/* header
+----------------------------------*/
+
+/*-- toolbar --*/
+
+.toolbar {
+  padding: 10px 10px 10px 10px;
+  min-height: inherit;
+}
+
+.toolbar.top-nav-on .breadcrumb-container {
+  padding: 0;
+}
+
+li.version-dropdown {
+  margin-top: -6px;
+}
+
+/* IE以外 */
+@media (min-width:768px) and (-webkit-min-device-pixel-ratio:0){
+  
+ .fixed-toolbar .toolbar {
+    position: sticky;
+  }
+  
+  .fixed-toolbar .site-content {
+    padding-top: 0;
+  }
+  
+  .fixed-toolbar .breadcrumb-container {
+    margin-left: 0;
+  }
+}
+
+
+/* footer
+----------------------------------*/
+
+/*-- In this section --*/
+
+.footer-content {
+  display: none;
+}
+
+/*-- 次へ/戻るボタン --*/
+
+/* タブレット、モバイル */
+@media (max-width: 1200px){
+  .visible-lg {
+    display: block!important;
+  }
+}
+
+/*-- copyright --*/
+
+.copyright {
+  display: none;
+}
+
+@media (min-width: 992px){
+  .col-md-3 {
+    width: auto;
+  }
+}
+
+
+/* -----------------------ここからSVF独自の設定----------------------- */
+
+/* SVF製品カラー #0a357a、アクティブな項目のカラー #365FA4
+----------------------------------*/
+
+/*-- toc等 --*/
+.bg-primary, .btn-primary, .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, .site-sidebar, .portal-single-publication .publication-icon {
+    background-color: #0a357a;
+}
+
+/*-- toc アクティブな項目 --*/
+.nav-site-sidebar ul .active > a, .nav-site-sidebar .active>a, .nav-site-sidebar li a:focus {
+  font-weight: normal;
+  background-color: #365FA4;
+}
+
+/*-- portal --*/
+/*header*/
+.portal-header:before {
+  background-color: #0a357a;
+}
+
+/*検索ボタン、おすすめ*/
+.portal-header .portal-search button, .publication-contents h4 span {
+    background-color: #0a357a;
+}
+
+/* SVFロゴ
+----------------------------------*/
+
+/*-- logo --*/
+.theme1 .site-sidebar .logo {
+    width: 173px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*-- logo最大幅 --*/
+.theme1 .site-sidebar .logo {
+    max-width: 125px;
+}
+
+/* panel icon
+----------------------------------*/
+
+.cat-panel:before, .cat-panel-1:before, .cat-panel-2:before, .cat-panel-3:before, .cat-panel-4:before {
+  content: "\f0f6";
+}
+
