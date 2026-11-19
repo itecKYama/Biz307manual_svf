@@ -1,0 +1,32 @@
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #0000ff;
+  font-size: 26px;
+}
+
+.description{
+  font-weight: bold;
+}
+
+.items{
+  width: 340px;
+  float: left;
+}
+
+.page_header{
+  background-color: #cccccc;
+}
+
+.end_page_font{
+  color: #0000ff;
+  font-size: 26px;
+}
+
+.error_page_font{
+  color: #ff0000;
+  font-size: 26px;
+}

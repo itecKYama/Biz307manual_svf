@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <servlet>
+    <servlet-name>ExecStreamPrintServlet</servlet-name>
+    <servlet-class>ExecStreamPrintServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ExecStreamPrintServlet</servlet-name>
+    <url-pattern>/servlet/ExecStreamPrintServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- filter -->
+  <filter>
+    <filter-name>Encoding</filter-name>
+    <filter-class>CorsFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>

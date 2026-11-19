@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<SvfWebClientIni>
+  <sections>
+    <section name="Debug">
+      <item
+        key="LogLevel"
+        value="NONE"
+      />
+    </section>
+  </sections>
+  <sections>
+    <section name="System">
+      <item
+        key="CacheTime"
+        value="2000"
+      />
+    </section>
+  </sections>
+</SvfWebClientIni>

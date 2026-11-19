@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<SvfWebDirectPrintIni>
+  <sections>
+    <!-- 新規Printer追加 -->
+    <section name="WINGARC001ST">
+      <item
+        key="EnumMode"
+        value="2"
+      />
+      
+      <item
+        key="Tray1"
+        value="1"
+      />
+      <item
+        key="Tray2"
+        value="2"
+      />
+      <item
+        key="Tray3"
+        value="3"
+      />
+    </section>
+  </sections>
+</SvfWebDirectPrintIni>

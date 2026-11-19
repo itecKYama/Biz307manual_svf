@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="sdp.js"></script>
+  <script src="main.js"></script>
+  <title>SVF Web Direct Print Sample Program</title>
+ </head>
+ <body>
+   <div class="container">
+   <table>
+    <tbody>
+     <tr>
+      <td colspan="8"><span class="title">SVF Web Direct Print Sample Program</span></td>
+    </tr>
+    </tbody>
+  </table>
+  <hr>
+  <div class="contents">
+  <div class="items">
+     <table>
+      <tbody>
+       <tr>
+        <td colspan="8"><span class="description">直接印刷</span></td>
+       </TR>
+       <tr>
+        <td colspan="8"><button onclick="print()">実行</button></td>
+       </tr>
+      </tbody>
+     </table>
+     <table>
+      <tbody>
+       <tr>
+        <td colspan="8"><span class="description">プリンター選択ダイアログ印刷</span></td>
+       </tr>
+       <tr>
+        <td colspan="8"><button onclick="showPrinterSelectDialog()">実行</button></td>
+       </tr>
+      </tbody>
+     </table>
+     <table>
+      <tbody>
+       <tr>
+        <td colspan="8"><span class="description">別ウィンドウプレビュー＋直接印刷</span></td>
+       </tr>
+       <tr>
+        <td colspan="8"><button onclick="showPreviewWindow_directPrint()">実行</button></td>
+       </tr>
+      </tbody>
+     </table>
+     <table>
+      <tbody>
+       <tr>
+        <td colspan="8"><span class="description">別ウィンドウプレビュー＋ダイアログ選択 </span></td>
+       </tr>
+       <tr>
+        <td colspan="8"><button onclick="showPreviewWindow_dialogPrint()">実行</button></td>
+       </tr>
+      </tbody>
+     </table>
+     <table>
+      <tbody>
+       <tr>
+        <td colspan="8"><span class="description">埋め込みプレビュー＋直接印刷</span></td>
+       </tr>
+       <tr>
+        <td colspan="8"><button onclick="embedPreviewWindow_directPrint()">実行</button></td>
+       </tr>
+      </tbody>
+     </table>
+     <table>
+      <tbody>
+       <tr>
+        <td colspan="8"><span class="description">埋め込みプレビュー＋ダイアログ選択 </span></td>
+       </tr>
+       <tr>
+        <td colspan="8"><button onclick="embedPreviewWindow_dialogPrint()">実行</button></td>
+       </tr>
+      </tbody>
+     </table>
+     <table>
+      <tbody>
+       <tr>
+        <td colspan="8"><span class="description">プリンター一覧表示</span></td>
+       </tr>
+       <tr>
+        <td colspan="8"><button onclick="getPrintersInfo()">実行</button></td>
+       </tr>
+      </tbody>
+     </table>
+    <table>
+     <tbody>
+      <tr>
+       <td colspan="8"><span class="description">設定ファイル更新</span></td>
+      </tr>
+      <tr>
+       <td colspan="8"><button onclick="updateConfigFile()">実行</button></td>
+      </tr>
+     </tbody>
+   </table>
+    <table>
+     <tbody>
+      <tr>
+       <td colspan="8"><span class="description">Traymap更新</span></td>
+      </tr>
+      <tr>
+       <td colspan="8"><button onclick="updateTraymap()">実行</button></td>
+      </tr>
+     </tbody>
+   </table>
+  </div>
+  <div class="preview_box">
+      <iframe class="previewframe" id="iframeID" style="height:800px; width:800px"></iframe>
+  </div>
+  </div>
+</div>
+</body>
+</html>
